@@ -1,4 +1,4 @@
-I have searched how to limit the range of date selectable in ant design's and found this answer.
+I have searched how to limit the range of date selectable in ant design and found this answer.
 
 https://github.com/ant-design/ant-design/issues/9330
 
