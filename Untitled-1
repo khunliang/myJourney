@@ -1,0 +1,26 @@
+<html>
+
+
+<head>
+
+    <title>Today's Weather in Thailand</title>
+  <style></style>
+  </head>
+  <body>
+    <h1>Today's Weather in Thailand</h1>
+    <p>It's a beautiful day in Thailand! The weather is warm and sunny with a high of 32°C (90°F). There is a light breeze and no chance of rain. Make sure to bring plenty of sunscreen if you're planning on spending time outdoors!</p>
+  </body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+</body>
+</html>
