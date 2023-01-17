@@ -7,7 +7,51 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Today's Weather in Thailand</h1>
-    <p>It's a beautiful day in Thailand! The weather is warm and sunny with a high of 32°C (90°F). There is a light breeze and no chance of rain. Make sure to bring plenty of sunscreen if you're planning on spending time outdoors!</p>
+  
+<h1>DALL-E Image Generator</h1>
+
+<form>
+  <input type="text" id="prompt" placeholder="Enter image description">
+  <button type="button" onclick="generateImage()">Generate Image</button>
+</form> 
+
+<br>
+
+<img id="dalle-image" src="" style="display:none; width:500px; height:auto;">
+
+
+<script>
+  function generateImage() {
+    var prompt = document.getElementById("prompt").value;
+    var url = "httpso99";
+    var api_key = "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";
+    var model = "image-alpha-001";
+    var image_size = "256x256";
+    var image_format = "png";
+
+    var image_url = url + "?model=" + model + "&prompt=" + prompt + "&size=" + image_size + "&image_format=" + image_format;
+
+    var xhr = new XMLHttpRequest();
+    xhr.open("POST", image_url);
+    xhr.setRequestHeader("Content-Type", "application/json");
+    xhr.setRequestHeader("Authorization", "Bearer " + api_key);
+
+    xhr.responseType = "blob";
+
+    xhr.onload = function() {
+      if (xhr.status === 200) {
+        var blob = xhr.response;
+        var img = document.getElementById("dalle-image");
+        img.src = URL.createObjectURL(blob);
+        img.style.display = "block";
+      } else {
+        console.error(xhr.statusText);
+      }
+    };
+
+    xhr.send();
+  }
+</script>
+
 </body>
 </html>
